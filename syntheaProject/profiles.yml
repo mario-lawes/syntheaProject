@@ -1,0 +1,12 @@
+syntheaProject:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      account: PCNZXXA-WJB27787
+      user: mlawes
+      password: "{{ env_var('SNOWFLAKE_PASSWORD') }}"
+      role: ACCOUNTADMIN
+      database: SYNTHEA
+      warehouse: COMPUTE_WH
+      schema: ""

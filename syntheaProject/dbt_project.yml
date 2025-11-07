@@ -1,0 +1,33 @@
+name: syntheaProject
+profile: syntheaProject
+
+seed-paths: ["seeds"]
+model-paths: ["models"]
+macro-paths: ["macros"]
+clean-targets:
+  - "target"
+  - "dbt_packages"
+
+seeds:
+  syntheaProject:
+    +schema: lookup
+    +enabled: true
+
+models:
+  syntheaProject:
+    staging:
+      +schema: staging
+      +materialized: view
+      +enabled: true
+    core:
+      +schema: core
+      +materialized: view
+      +enabled: true
+    marts:
+      +schema: analytics
+      +materialized: table
+      +enabled: true
+    summary_marts:
+      +schema: analytics
+      +materialized: table
+      +enabled: true

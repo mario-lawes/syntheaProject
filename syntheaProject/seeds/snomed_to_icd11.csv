@@ -1,0 +1,130 @@
+SNOMED_CODE, ICD10_CODE, ICD10_DESCRIPTION, COND_DESCRIPTION
+40055000, J32.9, Chronic sinusitis, Chronic sinusitis (disorder)
+444814009, I50.9, Heart failure, Heart failure unspecified
+195662009, E78.5, Hyperlipidemia, Hyperlipidemia
+10509002, J44.9, Chronic obstructive pulmonary disease, COPD unspecified
+43878008, I21.9, Acute myocardial infarction, Myocardial infarction
+284551006, K21.9, Gastroesophageal reflux disease, GERD
+75498004, R07.9, Chest pain, Chest pain unspecified
+70704007, I10, Essential hypertension, Hypertension
+65363002, E66.9, Obesity, Obesity unspecified
+162864005, I50.0, Congestive heart failure, Congestive heart failure
+38822007, J45.9, Asthma, Asthma unspecified
+65966004, F32.9, Major depressive disorder, Depression unspecified
+196416002, J18.9, Pneumonia, Pneumonia unspecified
+72892002, M54.5, Low back pain, Low back pain
+36971009, G44.1, Vascular headache, Vascular headache
+271737000, E11.9, Type 2 diabetes mellitus, Type 2 diabetes
+19169002, G43.9, Migraine, Migraine unspecified
+156073000, N39.0, Urinary tract infection, UTI unspecified
+15777000, J02.9, Acute pharyngitis, Pharyngitis unspecified
+59621000, N18.9, Chronic kidney disease, CKD unspecified
+301011002, F41.9, Anxiety disorder, Anxiety unspecified
+39848009, I25.10, Atherosclerotic heart disease, Athero heart disease
+49436004, J47.9, Bronchiectasis, Bronchiectasis unspecified
+44465007, I50.1, Left ventricular failure, Left ventricle failure
+283371005, K30, Functional dyspepsia, Dyspepsia
+254837009, K70.0, Alcoholic fatty liver, Alcoholic liver disease
+283385000, K21.0, Gastroesophageal reflux with esophagitis, GERD w/ esophagitis
+239873007, M79.1, Myalgia, Muscle pain
+398254007, R73.9, Elevated blood glucose, Hyperglycemia
+232353008, I63.9, Cerebral infarction, Stroke unspecified
+58150001, L40.9, Psoriasis, Psoriasis unspecified
+233678006, K57.30, Diverticulosis of large intestine, Diverticulosis
+370247008, G47.00, Insomnia, Insomnia unspecified
+241929008, R42, Dizziness, Dizziness unspecified
+62106007, M06.9, Rheumatoid arthritis, RA unspecified
+197927001, I25.10, Coronary atherosclerosis, Coronary disease
+55822004, I20.9, Angina pectoris, Angina
+239872002, R53.1, Weakness, Weakness unspecified
+53741008, I83.90, Varicose veins, Varicose veins unspecified
+68496003, J96.9, Respiratory failure, Resp failure unspecified
+79586000, N39.3, Stress incontinence, Urinary incontinence
+35999006, G56.9, Carpal tunnel syndrome, CTS unspecified
+230690007, E78.0, Pure hypercholesterolemia, Hypercholesterolemia
+1734006, C44.9, Skin cancer, Skin carcinoma unspecified
+24079001, J03.9, Acute tonsillitis, Tonsillitis unspecified
+367498001, I50.9, Heart failure, Heart failure
+410429000, I50.9, Heart failure, Heart failure
+429007001, G47.00, Insomnia, Insomnia
+16114001, I10, Hypertension, Hypertension unspecified
+403191005, I50.9, Heart failure, Heart failure
+263102004, E66.9, Obesity, Obesity
+44054006, E11.9, Type 2 diabetes mellitus, Type 2 diabetes
+302870006, K21.9, Gastroesophageal reflux disease, GERD
+237602007, I25.10, Coronary atherosclerosis, Coronary disease
+33737001, M54.5, Back pain, Back pain unspecified
+198992004, I50.9, Heart failure, Heart failure
+82423001, F41.9, Anxiety, Anxiety unspecified
+124171000119105, K76.0, Fatty liver disease, Fatty liver
+55680006, G43.1, Migraine with aura, Migraine aura
+64859006, G44.2, Tension-type headache, Tension headache
+83664006, K67.9, Peritonitis, Peritonitis unspecified
+128613002, E78.5, Hyperlipidemia, Hyperlipidemia
+703151001, J45.9, Asthma, Asthma unspecified
+446096008, E11.9, Type 2 diabetes mellitus, Type 2 diabetes
+84757009, I10, Hypertension, Hypertension
+22298006, K21.9, GERD, GERD unspecified
+399211009, J18.9, Pneumonia, Pneumonia unspecified
+408512008, K51.9, Ulcerative colitis, Ulcerative colitis unspecified
+80394007, I63.9, Stroke, Stroke unspecified
+368581000119106, I10, Hypertension, Hypertension
+422034002, E11.9, Type 2 diabetes mellitus, Type 2 diabetes
+1551000119108, ???, ???, ??? 
+431855005, E11.9, Type 2 diabetes mellitus, Type 2 diabetes
+127013003, H52.4, Presbyopia, Presbyopia
+201834006, I50.9, Heart failure, Heart failure
+126906006, I50.9, Heart failure, Heart failure
+92691004, F32.9, Depression, Depression
+284549007, K21.9, GERD, GERD
+307731004, J45.9, Asthma, Asthma unspecified
+87433001, I50.9, Heart failure, Heart failure
+74400008, K29.9, Gastritis, Gastritis unspecified
+428251008, I50.9, Heart failure, Heart failure
+370143000, G47.00, Insomnia, Insomnia unspecified
+7200002, M54.5, Back pain, Back pain unspecified
+48333001, J45.9, Asthma, Asthma unspecified
+30832001, K30, Dyspepsia, Dyspepsia
+62564004, F17.200, Nicotine dependence, Nicotine dependence
+192127007, I50.9, Heart failure, Heart failure
+444448004, I50.9, Heart failure, Heart failure
+713197008, E11.9, Type 2 diabetes mellitus, Type 2 diabetes
+40275004, E11.9, Type 2 diabetes mellitus, Type 2 diabetes
+230265002, I10, Hypertension, Hypertension unspecified
+431856006, E11.9, Type 2 diabetes mellitus, Type 2 diabetes
+90781000119102, ???, ???, ??? 
+6072007, M54.5, Back pain, Back pain unspecified
+236077008, I50.9, Heart failure, Heart failure
+363406005, I25.10, Coronary disease, Coronary disease unspecified
+403190006, Heart failure etc.
+162573006, E11.9, Type 2 diabetes mellitus, Type 2 diabetes
+254637007, E11.9, Type 2 diabetes mellitus, Type 2 diabetes
+424132000, I10, Hypertension, Hypertension unspecified
+88805009, E78.5, Hyperlipidemia, Hyperlipidemia
+185086009, J45.9, Asthma, Asthma unspecified
+239720000, R51, Headache, Headache unspecified
+15724005, J20.9, Acute bronchitis, Bronchitis unspecified
+449868002, I50.9, Heart failure, Heart failure
+90560007, K21.9, GERD, GERD unspecified
+47693006, G20, Parkinson disease, Parkinson's disease
+26929004, J32.9, Chronic sinusitis, Chronic sinusitis
+233604007, I21.9, Myocardial infarction, Myocardial infarction
+5602001, R51, Headache, Headache unspecified
+110030002, J03.9, Tonsillitis, Tonsillitis unspecified
+314994000, I10, Hypertension, Hypertension
+359817006, E11.9, Type 2 diabetes mellitus, Type 2 diabetes
+69896004, J45.9, Asthma, Asthma unspecified
+109838007, I50.9, Heart failure, Heart failure
+97331000119101, ???, ???, ??? 
+443165006, K21.9, GERD, GERD
+275272006, K21.9, GERD, GERD
+94260004, I10, Hypertension, Hypertension
+262574004, E11.9, Type 2 diabetes mellitus, Type 2 diabetes
+1501000119109, ???, ???, ??? 
+444470001, I10, Hypertension, Hypertension
+45816000, I10, Hypertension, Hypertension
+95417003, I10, Hypertension, Hypertension
+93761005, I50.9, Heart failure, Heart failure
+254632001, E11.9, Type 2 diabetes mellitus, Type 2 diabetes
+67811000119102, ???, ???, ??? 
+36923009, J45.9, Asthma, Asthma unspecified

@@ -2,3 +2,13 @@
 /.vscode
 /logs
 analysis/quartoNotebook_files
+
+# Ignore Python virtual environment
+syntheaProject/dbt_env/
+syntheaProject/dbt_internal_packages/
+syntheaProject/dbt_packages/
+syntheaProject/logs
+syntheaProject/macros
+syntheaProject/target
+__pycache__/
+*.pyc
