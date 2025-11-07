@@ -1,0 +1,13 @@
+version: 2
+
+sources:
+  - name: synthea_raw
+    schema: RAW
+    tables:
+      - name: patients
+      - name: encounters
+      - name: conditions
+      - name: observations
+      - name: medications
+      - name: organizations
+      - name: procedures

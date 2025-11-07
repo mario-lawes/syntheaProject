@@ -1,0 +1,28 @@
+{{ config(materialized = 'table')}}
+
+SELECT
+c.ENCOUNTER_ID,
+c.PATIENT_ID,
+p.BIRTHDATE,
+p.DEATHDATE,
+p.GENDER,
+p.RACE,
+p.ETHNICITY,
+p.STATE,
+p.COUNTY,
+c.START_DATE,
+c.STOP_DATE,
+EXTRACT(year from c.START_DATE) AS YEAR,
+c.ENCOUNTER_CLASS,
+c.ENC_DESCRIPTION,
+c.COND_START,
+c.COND_STOP,
+c.COND_DESCRIPTION,
+c.CODE,
+c.ICD10_CODE,
+c.ENC_BASE_COST,
+c.ENC_TOTAL_CLAIM_CAST,
+c.ENC_PAYER_COVERAGE,
+c.PRO_COST
+FROM {{ ref('core_encounters_conditions') }} c
+LEFT JOIN {{ ref('core_conditions_patients') }} p ON c.PATIENT_ID = p.PATIENT_ID

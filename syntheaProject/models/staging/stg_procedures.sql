@@ -1,0 +1,10 @@
+{{ config(materialized = 'view')}}
+
+SELECT
+    DATE AS PRO_DATE,
+    PATIENT PATIENT_ID,
+    ENCOUNTER ENCOUNTER_ID,
+    DESCRIPTION PRO_DESCRIPTION,
+    TRY_CAST(NULLIF(BASE_COST, '') AS FLOAT) AS PRO_COST,
+    REASONDESCRIPTION PRO_REASON
+FROM {{ source('synthea_raw', 'procedures')}} 

@@ -1,0 +1,41 @@
+---
+title: "Patientenstruktur"
+author: "Mario Lawes"
+format: html
+jupyter: python3
+---
+
+# Patientenstruktur
+
+## Alters- und Geschlechtsverteilung
+
+```{python echo=False}
+import keyring
+import pandas as pd
+import snowflake.connector
+import matplotlib.pyplot as plt
+```
+
+# Snowflake Passwort aus Keyring
+```{python  echo=False}
+snowflakePW = keyring.get_password("snowflake", "mlawes")
+```
+
+# Verbindung zu Snowflake
+```{python echo=False}
+conn = snowflake.connector.connect(
+    account = "PCNZXXA-WJB27787",
+    user = "mlawes",
+    password = snowflakePW,
+    warehouse='COMPUTE_WH',
+    database='SYNTHEA',
+    schema='_ANALYTICS'
+)
+```
+
+# Patientenübersicht laden
+```{python echo=False}
+df_patients = pd.read_sql("SELECT * FROM MART_PATIENTS_OVERVIEW", conn)
+df_patients.head()
+```
+

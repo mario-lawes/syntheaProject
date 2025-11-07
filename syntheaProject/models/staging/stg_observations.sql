@@ -1,0 +1,11 @@
+{{ config(materialized = 'view')}}
+
+SELECT
+PATIENT AS PATIENT_ID,
+ENCOUNTER AS ENCOUNTER_ID,
+DATE AS OBS_DATE,
+DESCRIPTION AS OBS_DESCRIPTION,
+VALUE AS OBS_VALUE,
+UNITS AS OBS_UNITS,
+TYPE AS OBS_TYPE
+FROM {{ source('synthea_raw', 'observations')}} 

@@ -1,0 +1,147 @@
+models:
+  - name: stg_patients
+    description: Contains the raw data from the patients csv input.
+    columns:
+      - name: patient_id
+        data_type: varchar
+      - name: birthdate
+        data_type: date
+      - name: deathdate
+        data_type: date
+      - name: gender
+        data_type: varchar
+      - name: race
+        data_type: varchar
+      - name: ethnicity
+        data_type: varchar
+      - name: first_name
+        data_type: varchar
+      - name: last_name
+        data_type: varchar
+      - name: state
+        data_type: varchar
+      - name: county
+        data_type: varchar
+      - name: healthcare_expenses
+        data_type: float
+      - name: healthcare_coverage
+        data_type: float
+  - name: stg_conditions
+    columns:
+      - name: patient_id
+        data_type: varchar
+      - name: encounter_id
+        data_type: varchar
+      - name: cond_start
+        data_type: date
+      - name: cond_stop
+        data_type: date
+      - name: cond_description
+        data_type: varchar
+      - name: code
+        data_type: varchar
+  - name: stg_encounters
+    columns:
+      - name: encounter_id
+        data_type: varchar
+      - name: start_date
+        data_type: date
+      - name: stop_date
+        data_type: date
+      - name: patient_id
+        data_type: varchar
+      - name: org_id
+        data_type: varchar
+      - name: encounter_class
+        data_type: varchar
+      - name: enc_description
+        data_type: varchar
+      - name: enc_base_cost
+        data_type: float
+      - name: enc_total_claim_cast
+        data_type: float
+      - name: enc_payer_coverage
+        data_type: float
+      - name: enc_reason
+        data_type: varchar
+  - name: stg_medications
+    columns:
+      - name: patient_id
+        data_type: varchar
+      - name: encounter_id
+        data_type: varchar
+      - name: start_date
+        data_type: date
+      - name: stop_date
+        data_type: date
+      - name: med_description
+        data_type: varchar
+      - name: med_base_cost
+        data_type: float
+      - name: med_payer_coverage
+        data_type: float
+      - name: dispenses
+        data_type: number
+      - name: med_total_cost
+        data_type: float
+      - name: med_reason
+        data_type: varchar
+  - name: stg_observations
+    description: g
+    columns:
+      - name: patient_id
+        data_type: varchar
+      - name: encounter_id
+        data_type: varchar
+      - name: obs_date
+        data_type: date
+      - name: obs_description
+        data_type: varchar
+      - name: obs_value
+        data_type: varchar
+      - name: obs_units
+        data_type: varchar
+      - name: obs_type
+        data_type: varchar
+  - name: stg_organizations
+    columns:
+      - name: org_id
+        data_type: varchar
+      - name: org_name
+        data_type: varchar
+      - name: org_state
+        data_type: varchar
+      - name: org_lat
+        data_type: varchar
+      - name: org_lon
+        data_type: varchar
+      - name: org_revenue
+        data_type: float
+  - name: stg_procedures
+    columns:
+      - name: pro_date
+        data_type: date
+      - name: patient_id
+        data_type: varchar
+      - name: encounter_id
+        data_type: varchar
+      - name: pro_description
+        data_type: varchar
+      - name: pro_cost
+        data_type: float
+      - name: pro_reason
+        data_type: varchar
+  - name: stg_who_suicideRates
+    columns:
+      - name: country
+        data_type: varchar
+      - name: continent
+        data_type: varchar
+      - name: year
+        data_type: number
+      - name: gender
+        data_type: varchar
+      - name: suiciderate
+        data_type: float
+      - name: lastupdate
+        data_type: timestamp_ntz

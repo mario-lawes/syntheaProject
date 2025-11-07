@@ -1,0 +1,151 @@
+models:
+  - name: mart_conditions_overview
+    columns:
+      - name: encounter_id
+        data_type: varchar
+      - name: patient_id
+        data_type: varchar
+      - name: birthdate
+        data_type: date
+      - name: deathdate
+        data_type: date
+      - name: gender
+        data_type: varchar
+      - name: race
+        data_type: varchar
+      - name: ethnicity
+        data_type: varchar
+      - name: state
+        data_type: varchar
+      - name: county
+        data_type: varchar
+      - name: start_date
+        data_type: date
+      - name: stop_date
+        data_type: date
+      - name: year
+        data_type: number
+      - name: encounter_class
+        data_type: varchar
+      - name: enc_description
+        data_type: varchar
+      - name: cond_start
+        data_type: date
+      - name: cond_stop
+        data_type: date
+      - name: cond_description
+        data_type: varchar
+      - name: code
+        data_type: varchar
+      - name: icd10_code
+        data_type: varchar
+      - name: enc_base_cost
+        data_type: float
+      - name: enc_total_claim_cast
+        data_type: float
+      - name: enc_payer_coverage
+        data_type: float
+      - name: pro_cost
+        data_type: float
+  - name: mart_encounters_overview
+    columns:
+      - name: patient_id
+        data_type: varchar
+      - name: gender
+        data_type: varchar
+      - name: encounter_id
+        data_type: varchar
+      - name: start_date
+        data_type: date
+      - name: stop_date
+        data_type: date
+      - name: encounter_class
+        data_type: varchar
+      - name: enc_description
+        data_type: varchar
+      - name: enc_base_cost
+        data_type: float
+      - name: enc_total_claim_cast
+        data_type: float
+      - name: enc_payer_coverage
+        data_type: float
+      - name: suiciderate
+        data_type: float
+  - name: mart_organizations_overview
+    columns:
+      - name: patient_id
+        data_type: varchar
+      - name: encounter_id
+        data_type: varchar
+      - name: start_date
+        data_type: date
+      - name: stop_date
+        data_type: date
+      - name: encounter_class
+        data_type: varchar
+      - name: enc_description
+        data_type: varchar
+      - name: enc_reason
+        data_type: varchar
+      - name: org_name
+        data_type: varchar
+      - name: org_state
+        data_type: varchar
+      - name: org_revenue
+        data_type: float
+      - name: enc_pro_cost
+        data_type: float
+      - name: num_pro_in_enc
+        data_type: number
+  - name: mart_patients_overview
+    columns:
+      - name: patient_id
+        data_type: varchar
+      - name: birthdate
+        data_type: date
+      - name: deathdate
+        data_type: date
+      - name: age
+        data_type: number
+      - name: gender
+        data_type: varchar
+      - name: race
+        data_type: varchar
+      - name: ethnicity
+        data_type: varchar
+      - name: state
+        data_type: varchar
+      - name: county
+        data_type: varchar
+      - name: num_encounters
+        data_type: number
+  - name: mart_procedures_overview
+    columns:
+      - name: patient_id
+        data_type: varchar
+      - name: encounter_id
+        data_type: varchar
+      - name: birthdate
+        data_type: date
+      - name: deathdate
+        data_type: date
+      - name: gender
+        data_type: varchar
+      - name: race
+        data_type: varchar
+      - name: ethnicity
+        data_type: varchar
+      - name: pro_date
+        data_type: date
+      - name: pro_description
+        data_type: varchar
+      - name: pro_cost
+        data_type: float
+      - name: pro_reason
+        data_type: varchar
+      - name: org_name
+        data_type: varchar
+      - name: org_state
+        data_type: varchar
+      - name: org_revenue
+        data_type: float

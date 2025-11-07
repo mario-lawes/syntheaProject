@@ -1,0 +1,18 @@
+{{ config(materialized = 'view')}}
+
+SELECT 
+PATIENT_ID,
+ENCOUNTER_ID,
+BIRTHDATE,
+DEATHDATE,
+GENDER,
+RACE,
+ETHNICITY,
+PRO_DATE,
+PRO_DESCRIPTION,
+PRO_COST,
+PRO_REASON,
+ORG_NAME,
+ORG_STATE,
+ORG_REVENUE
+FROM {{ ref('core_procedures_patients') }}

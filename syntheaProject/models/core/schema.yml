@@ -1,0 +1,230 @@
+models:
+  - name: core_conditions_patients
+    description: This model contains one row for each Patient*Condition combination
+    columns:
+      - name: patient_id
+        description: unique patient ID
+        data_type: varchar
+      - name: birthdate
+        description: birthdate of patient
+        data_type: date
+      - name: deathdate
+        data_type: date
+        description: deathdate of patient
+      - name: gender
+        data_type: varchar
+        description: Gender of patient ('M' vs. 'F')
+      - name: race
+        data_type: varchar
+        description: race of patient
+      - name: ethnicity
+        data_type: varchar
+        description: ethnicity of patient
+      - name: state
+        data_type: varchar
+        description: us state where patient lives
+      - name: county
+        data_type: varchar
+        description: us county where patient lives
+      - name: cond_start
+        data_type: date
+        description: start date of the condition
+      - name: cond_stop
+        data_type: date
+        description: end date of the condition
+      - name: cond_description
+        data_type: varchar
+        description: descritpion of the condition
+      - name: code
+        data_type: varchar
+        description: Snomed code of the condition
+      - name: icd10_code
+        data_type: varchar
+        description: ICD10 code of the condition
+  - name: core_encounter_patients
+    description: This model contains one row per encounter.
+  - name: core_encounters_conditions
+    columns:
+      - name: cond_start
+        data_type: date
+      - name: cond_stop
+        data_type: date
+      - name: cond_description
+        data_type: varchar
+      - name: code
+        data_type: varchar
+      - name: icd10_code
+        data_type: varchar
+      - name: patient_id
+        data_type: varchar
+      - name: encounter_id
+        data_type: varchar
+      - name: start_date
+        data_type: date
+      - name: stop_date
+        data_type: date
+      - name: encounter_class
+        data_type: varchar
+      - name: enc_description
+        data_type: varchar
+      - name: enc_base_cost
+        data_type: float
+      - name: enc_total_claim_cast
+        data_type: float
+      - name: enc_payer_coverage
+        data_type: float
+      - name: pro_date
+        data_type: date
+      - name: pro_description
+        data_type: varchar
+      - name: pro_cost
+        data_type: float
+      - name: pro_reason
+        data_type: varchar
+  - name: core_encounters_organizations
+    description: This model contains one row per encounter alongside information on the organization and the procedures.
+    columns:
+      - name: patient_id
+        data_type: varchar
+      - name: encounter_id
+        data_type: varchar
+      - name: start_date
+        data_type: date
+      - name: stop_date
+        data_type: date
+      - name: encounter_class
+        data_type: varchar
+      - name: enc_description
+        data_type: varchar
+      - name: enc_reason
+        data_type: varchar
+      - name: org_name
+        data_type: varchar
+      - name: org_state
+        data_type: varchar
+      - name: org_revenue
+        data_type: float
+      - name: pro_date
+        data_type: date
+      - name: pro_description
+        data_type: varchar
+      - name: pro_cost
+        data_type: float
+      - name: pro_reason
+        data_type: varchar
+  - name: core_encounters_patients
+    columns:
+      - name: patient_id
+        data_type: varchar
+      - name: birthdate
+        data_type: date
+      - name: deathdate
+        data_type: date
+      - name: gender
+        data_type: varchar
+      - name: race
+        data_type: varchar
+      - name: ethnicity
+        data_type: varchar
+      - name: state
+        data_type: varchar
+      - name: county
+        data_type: varchar
+      - name: org_id
+        data_type: varchar
+      - name: encounter_id
+        data_type: varchar
+      - name: start_date
+        data_type: date
+      - name: stop_date
+        data_type: date
+      - name: encounter_class
+        data_type: varchar
+      - name: enc_description
+        data_type: varchar
+      - name: enc_base_cost
+        data_type: float
+      - name: enc_total_claim_cast
+        data_type: float
+      - name: enc_payer_coverage
+        data_type: float
+      - name: enc_reason
+        data_type: varchar
+      - name: org_name
+        data_type: varchar
+      - name: org_state
+        data_type: varchar
+      - name: org_revenue
+        data_type: float
+  - name: core_medications_patients
+    columns:
+      - name: patient_id
+        data_type: varchar
+      - name: birthdate
+        data_type: date
+      - name: gender
+        data_type: varchar
+      - name: race
+        data_type: varchar
+      - name: ethnicity
+        data_type: varchar
+      - name: state
+        data_type: varchar
+      - name: county
+        data_type: varchar
+      - name: start_date
+        data_type: date
+      - name: stop_date
+        data_type: date
+      - name: med_description
+        data_type: varchar
+      - name: dispenses
+        data_type: number
+      - name: med_total_cost
+        data_type: float
+      - name: med_reason
+        data_type: varchar
+  - name: core_procedures_patients
+    columns:
+      - name: patient_id
+        data_type: varchar
+      - name: birthdate
+        data_type: date
+      - name: deathdate
+        data_type: date
+      - name: gender
+        data_type: varchar
+      - name: race
+        data_type: varchar
+      - name: ethnicity
+        data_type: varchar
+      - name: state
+        data_type: varchar
+      - name: county
+        data_type: varchar
+      - name: encounter_id
+        data_type: varchar
+      - name: enc_description
+        data_type: varchar
+      - name: enc_base_cost
+        data_type: float
+      - name: enc_total_claim_cast
+        data_type: float
+      - name: enc_payer_coverage
+        data_type: float
+      - name: enc_reason
+        data_type: varchar
+      - name: pro_date
+        data_type: date
+      - name: pro_description
+        data_type: varchar
+      - name: pro_cost
+        data_type: float
+      - name: pro_reason
+        data_type: varchar
+      - name: org_name
+        data_type: varchar
+      - name: org_state
+        data_type: varchar
+      - name: org_revenue
+        data_type: float

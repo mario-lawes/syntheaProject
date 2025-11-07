@@ -1,0 +1,34 @@
+# ===============================
+# dbt
+# ===============================
+/syntheaProject/target/
+#/syntheaProject/logs/
+#/syntheaProject/dbt_packages/
+#/syntheaProject/dbt_internal_packages/
+#/syntheaProject/dbt_env/
+#/syntheaProject/package-lock.yml
+
+# ===============================
+# Python
+# ===============================
+#*.pyc
+#__pycache__/
+#*.pyo
+#*.pyd
+#*.env
+#*.venv
+#.env/
+#venv/
+#env/
+#pip-log.txt
+#pip-delete-this-directory.txt
+
+
+# ===============================
+# OS / Editor
+# ===============================
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp

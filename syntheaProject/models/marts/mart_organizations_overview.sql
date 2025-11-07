@@ -1,0 +1,45 @@
+
+{{ config(materialized = 'view')}}
+
+WITH fullTab AS (
+SELECT 
+    PATIENT_ID,
+    ENCOUNTER_ID,
+    START_DATE,
+    STOP_DATE,
+    ENCOUNTER_CLASS,
+    ENC_DESCRIPTION,
+    ENC_REASON,
+    ORG_NAME,
+    ORG_STATE,
+    ORG_REVENUE,
+    PRO_DATE,
+    PRO_DESCRIPTION,
+    PRO_COST,
+    PRO_REASON
+FROM {{ ref('core_encounters_organizations') }}
+WHERE PRO_DATE IS NOT NULL),
+
+sumCostsTab AS (
+SELECT
+    ENCOUNTER_ID,
+    SUM(PRO_COST) AS ENC_PRO_COST,
+    COUNT(*) AS NUM_PRO_IN_ENC
+FROM fullTab
+GROUP BY ENCOUNTER_ID)
+
+SELECT 
+    f.PATIENT_ID,
+    f.ENCOUNTER_ID,
+    f.START_DATE,
+    f.STOP_DATE,
+    f.ENCOUNTER_CLASS,
+    f.ENC_DESCRIPTION,
+    f.ENC_REASON,
+    f.ORG_NAME,
+    f.ORG_STATE,
+    f.ORG_REVENUE,
+    s.ENC_PRO_COST,
+    s.NUM_PRO_IN_ENC
+FROM fullTab f
+LEFT JOIN sumCostsTab s ON f.ENCOUNTER_ID = s.ENCOUNTER_ID

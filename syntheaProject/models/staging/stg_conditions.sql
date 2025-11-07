@@ -1,0 +1,10 @@
+{{ config(materialized = 'view')}}
+
+SELECT
+PATIENT AS PATIENT_ID,
+ENCOUNTER AS ENCOUNTER_ID,
+START_DATE AS COND_START,
+STOP_DATE AS COND_STOP,
+DESCRIPTION AS COND_DESCRIPTION,
+CODE
+FROM {{ source('synthea_raw', 'conditions')}} 

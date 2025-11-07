@@ -1,0 +1,43 @@
+models:
+  - name: summart_conditions
+    columns:
+      - name: cond_description
+        data_type: varchar
+      - name: code
+        data_type: varchar
+      - name: icd10_code
+        data_type: varchar
+      - name: year
+        data_type: number
+      - name: num_pat
+        data_type: number
+      - name: total_num_pat
+        data_type: number
+      - name: rate_pat
+        data_type: number
+      - name: num_encounters
+        data_type: number
+      - name: total_num_enc
+        data_type: number
+      - name: rate_enc
+        data_type: number
+      - name: avg_age
+        data_type: number
+      - name: avg_female
+        data_type: number
+      - name: avg_cost
+        data_type: float
+  - name: summart_organizations
+    columns:
+      - name: org_name
+        data_type: varchar
+      - name: org_revenue
+        data_type: float
+      - name: year
+        data_type: number
+      - name: num_pat
+        data_type: number
+      - name: num_enc
+        data_type: number
+      - name: total_costs
+        data_type: float
